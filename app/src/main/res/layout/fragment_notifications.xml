@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="520sp"
+                tools:context=".ui.notifications.NotificationsFragment">
+
+    <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_width="330sp"
+            android:layout_height="60sp"
+            android:layout_marginTop="10sp"
+    >
+
+        <TableRow tools:ignore="UselessParent">
+            <TextView
+                    android:id="@+id/amicsBTN"
+                    android:background="#5C5757"
+                    android:layout_width="110sp"
+                    android:layout_height="60sp"
+                    android:paddingLeft="5sp"
+                    android:paddingTop="25sp"
+                    android:text="AMICS"
+                    android:textSize="20sp" />
+
+            <TextView
+                    android:id="@+id/totsBTN"
+                    android:background="#5C5757"
+                    android:layout_width="110sp"
+                    android:layout_height="60sp"
+                    android:paddingLeft="5sp"
+                    android:paddingTop="25sp"
+                    android:text="TOTS"
+                    android:textSize="20sp" />
+
+            <TextView
+                    android:background="#5C5757"
+                    android:id="@+id/asistireBTN"
+                    android:layout_width="110sp"
+                    android:layout_height="60sp"
+                    android:paddingLeft="5sp"
+                    android:paddingTop="25sp"
+                    android:text="ASSISTIRE"
+                    android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+            android:id="@+id/filtresTV"
+            android:layout_below="@+id/tableLayout"
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="#5C5757"
+            android:textSize="20sp"
+            android:text="Filtrar: Espanya, Madrid"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerMogudes"
+            android:layout_width="match_parent"
+            android:layout_height="380sp"
+            android:layout_below="@id/filtresTV"
+            android:layout_marginTop="10sp"/>
+
+
+</RelativeLayout>

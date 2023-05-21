@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.dashboard.DashboardFragment" android:orientation="vertical" android:layout_marginTop="50dp">
+
+    <TextView
+            android:id="@+id/text_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:padding="@dimen/activity_horizontal_margin">
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/locationEditText"
+                android:hint="Location"
+                android:autofillHints="" android:drawableLeft="@android:drawable/ic_menu_compass"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/categoryEditText"
+                android:hint="Category"
+                android:autofillHints="" android:drawableLeft="@android:drawable/ic_menu_sort_by_size"/>
+    </LinearLayout>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/eventTitleEditText"
+            android:hint="Title"
+            android:layout_marginTop="46dp"
+            android:shadowRadius="@integer/material_motion_duration_long_1"
+            android:autofillHints=""/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/eventPriceEditText"
+            android:hint="Price (optional)"
+            android:layout_marginTop="46dp"
+            android:shadowRadius="@integer/material_motion_duration_long_1"
+            android:autofillHints=""/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="50dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/eventDescriptionEditText"
+            android:hint="Description"
+            android:layout_marginTop="46dp"
+            android:shadowRadius="@integer/material_motion_duration_long_1"
+            android:autofillHints=""/>
+    <Button
+            android:text="Acaba el post i promociona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/promociona"
+            android:height="70dp"
+            android:drawableEnd="@android:drawable/ic_menu_send" android:backgroundTint="#587279"
+            android:textColor="#DCC4C4" android:layout_marginTop="40dp"/>
+
+</LinearLayout>
